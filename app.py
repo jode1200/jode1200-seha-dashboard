@@ -1,6 +1,10 @@
 import streamlit as st
 import pandas as pd
 from playwright.sync_api import sync_playwright
+import os
+# تثبيت المتصفح والتبعيات الخاصة به
+os.system("playwright install")
+os.system("playwright install-deps")
 import pytesseract
 from PIL import Image
 import re
